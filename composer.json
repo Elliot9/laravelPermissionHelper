@@ -1,0 +1,19 @@
+{
+    "name": "elliot9/laravel-permission-helper",
+    "description": "Role Permission Management",
+    "authors": [
+        {
+            "name": "elliot9",
+            "email": "gt520490@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2.5",
+        "laravel/framework": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Elliot9\\laravelPermissionHelper\\": "src"
+        }
+    }
+}
