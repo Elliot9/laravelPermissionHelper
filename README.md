@@ -19,6 +19,7 @@ and add this below the aliases
 Publish the storage configuration file and migrateion.
 ```php
   php artisan vendor:publish --provider="Elliot9\laravelPermissionHelper\PermissionHelperServiceProvider" --tag="migrations"
+  php artisan vendor:publish --provider="Elliot9\laravelPermissionHelper\PermissionHelperServiceProvider" --tag="config"
 ```
 
 Running Migrations
@@ -29,13 +30,13 @@ Running Migrations
 
 ### Setting
 
-set all the Authenticatable class at config
+set all the Authenticatable class at config like ->
 ```php
   return [
       'PermissionSetting' => [
           'types' => [
-              'admin' =>   \App\User::class,
-              'guest' => \App\Guest::class,
+              'User' =>   \App\User::class,
+              'Admin' => \App\Admin::class,
           ]
       ]
   ];
