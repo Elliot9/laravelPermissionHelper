@@ -3,8 +3,7 @@
 return [
     'PermissionSetting' => [
         'types' => [
-            'admin' =>   \App\User::class,
-            'guest' => \App\Guest::class,
+            'user' =>   \App\User::class,
         ]
     ]
 ];

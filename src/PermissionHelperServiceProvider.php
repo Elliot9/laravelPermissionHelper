@@ -34,6 +34,10 @@ class PermissionHelperServiceProvider extends ServiceProvider
                 $this->publishes([
                     __DIR__.DIRECTORY_SEPARATOR .'database'.DIRECTORY_SEPARATOR .'migrations'.DIRECTORY_SEPARATOR.'create_permissions_table.php.stub' => database_path('migrations'. DIRECTORY_SEPARATOR . date('Y_m_d_His', time()) . '_create_permissions_table.php'),
                 ], 'migrations');
+
+                $this->publishes([
+                    __DIR__.DIRECTORY_SEPARATOR.'config'.DIRECTORY_SEPARATOR.'config.php' => config_path('permission.php'),
+                ], 'config');
             }
         }
 
